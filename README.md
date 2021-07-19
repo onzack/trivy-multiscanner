@@ -1,25 +1,23 @@
 # Trivy multiscanner
-Scan a list of container images using Aqua Security's trivy CLI tool.  
-See: https://github.com/aquasecurity/trivy
+Scan a list of container images using Aqua Security's trivy CLI tool. See: https://github.com/aquasecurity/trivy
 
 # Quick guide
 ## Prerequisites
-- Docker or an other supported contaienr runtime
+- Docker or an other supported container runtime
 - trivy CLI, see: https://aquasecurity.github.io/trivy/v0.19.1/getting-started/installation/
 
 ## Installation
 1. Clone this repository to your local machine.
 2. Make the script executable: `chmod +x ./trivy-multiscanner/trivy-multiscanner.bash`
-3. Create a file with a list of container images.  
-  Example example-images-list.txt:
-  ```
-  ubuntu:20.04
-  quay.io/onzack/telegraf-swm:latest
-  ```
+3. Create a file with a list of container images. Example: example-images-list.txt:  
+   ```
+   ubuntu:20.04
+   quay.io/onzack/telegraf-swm:latest
+   ```
 4. Start the script and pass the path to the file with the list of container images:  
-  ```
-  ./trivy-multiscanner/trivy-multiscanner.bash ./trivy-multiscanner/example-images-list.txt
-  ```
+   ```
+   ./trivy-multiscanner/trivy-multiscanner.bash ./trivy-multiscanner/example-images-list.txt
+   ```
 
 ## Example output
 ```
