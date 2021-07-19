@@ -1,0 +1,2 @@
+ubuntu:20.04
+quay.io/onzack/telegraf-swm:latest
