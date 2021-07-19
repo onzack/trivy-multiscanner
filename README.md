@@ -1,4 +1,4 @@
-# Trivy ultiscanner
+# Trivy multiscanner
 Scan a list of container images using Aqua Security's trivy CLI tool.
 See: https://github.com/aquasecurity/trivy
 
