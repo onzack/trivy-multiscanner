@@ -56,7 +56,7 @@ for i in $(cat $1); do
       docker image ls $i --format 'Image: {{.Repository}}:{{.Tag}} was created {{.CreatedSince}}'
       echo ""
       echo "----- Scan image -----"
-      trivy $i
+      trivy image $i
     else
       PULLERROR=true
       echo ""
